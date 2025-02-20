@@ -63,9 +63,9 @@ main.Consts = {
     AMMO_ARROW = 'Arrow',
     AMMO_BOLT = 'Bolt',
     AMMO_BULLET = 'Bullet',
-    AMMO_CANNON = 'Cannon',
-    AMMO_THROW = 'Throw',
-    AMMO_NONE = 'None',
+    AMMO_CANNON = 'Cannon', -- Guns like the Culverin
+    AMMO_THROW = 'Throw',   -- Consumable ammo throwing weapon
+    AMMO_NONE = 'None',     -- Reusable throwing weapon
 };
 
 
