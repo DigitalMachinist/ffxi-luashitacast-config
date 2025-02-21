@@ -104,7 +104,7 @@ profile.OnLoad = function()
         -- Bonuses to STR, DEX, Atk
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
-        Head = 'Assassin\'s Bonnet',
+        Head = 'Pln. Qalansuwa',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
@@ -121,7 +121,7 @@ profile.OnLoad = function()
         -- Bonuses to DEX, Acc
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
-        Head = 'Assassin\'s Bonnet',
+        Head = 'Pln. Qalansuwa',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',

@@ -80,7 +80,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Atk, STR
         Main = 'Mamushito',
         Sub = 'Mamushito',
-        Head = 'Empress Hairpin',
+        Head = 'Pln. Qalansuwa',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
@@ -98,7 +98,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Mamushito',
         Sub = 'Mamushito',
-        Head = 'Empress Hairpin',
+        Head = 'Pln. Qalansuwa',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
