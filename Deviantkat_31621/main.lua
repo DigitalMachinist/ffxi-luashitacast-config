@@ -166,7 +166,7 @@ end
 
 main.OnUnload = function()
     -- Unbind keys
-    for key, value in pairs(main.Keybinds) do
+    for key, value in pairs(main.Settings.Keybinds) do
         AshitaCore:GetChatManager():QueueCommand(-1, '/unbind ' .. key);
     end
 end
@@ -569,8 +569,6 @@ main.SetRANGED = function(rangedGearsetKey)
     if (newAmmoType ~= main.Consts.AMMO_NONE) then
         -- Use the first-registered ammo by default.
         main.SetAMMO(main.GearsetRangedAmmos[newAmmoType][1]);
-    else
-        main.SetAMMO(nil);
     end
 end
 
