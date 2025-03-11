@@ -249,6 +249,8 @@ profile.OnLoad = function()
         Feet = 'Ninja Kyahan',
     });
     main.RegisterTimeOfDayGearset(consts.UTILITY, consts.UTILITY_NIGHT, 18, 6, {
+        Body = 'Pln. Khazagand',
+        Legs = 'Ninja Hakama',
         Feet = 'Ninja Kyahan',
     });
 
