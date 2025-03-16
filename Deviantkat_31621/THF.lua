@@ -9,6 +9,7 @@ local consts = {
     FARM = 'Farm',
     TP = 'TP',
     CAST = 'Cast',
+    SURVIVE = 'Survive',
     TANK = 'Tank',
     UTILITY = 'Utility',
     SPECIAL = 'Special',
@@ -76,10 +77,11 @@ profile.OnLoad = function()
             ['F1'] = consts.FARM,
             ['F2'] = consts.TP,
             ['F3'] = consts.CAST,
-            ['F4'] = consts.TANK,
-            ['F5'] = consts.UTILITY,
-            ['F6'] = consts.SPECIAL,
+            ['F4'] = consts.SURVIVE,
+            ['F5'] = consts.TANK,
+            ['F6'] = consts.UTILITY,
             ['F7'] = consts.TH,
+            ['F9'] = consts.SPECIAL,
             ['F10'] = main.Consts.STATUS,
             ['F11'] = main.Consts.DEBUG,
             ['F12'] = main.Consts.ENABLE,
@@ -151,8 +153,8 @@ profile.OnLoad = function()
         Legs = 'Pln. Seraweels',
         Feet = 'Pln. Crackows',
     });
-    main.RegisterStanceGearset(consts.TANK, {
-        -- Bonuses to Eva, HP, Def
+    main.RegisterStanceGearset(consts.SURVIVE, {
+        -- Bonuses to Eva, HP, Def, -Enmity
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
         Head = 'Empress Hairpin',
@@ -160,6 +162,23 @@ profile.OnLoad = function()
         Ear1 = 'Wing Earring',
         Ear2 = 'Wing Earring',
         Body = 'Scorpion Harness',
+        Hands = 'Pln. Dastanas',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Bet Cape',
+        Waist = 'Survival Belt',
+        Legs = 'Pln. Seraweels',
+        Feet = 'Pln. Crackows',
+    });
+    main.RegisterStanceGearset(consts.TANK, {
+        -- Bonuses to Eva, HP, Def, Enmity
+        Main = 'Batardeau',
+        Sub = 'X\'s Knife',
+        Head = 'Assassin\'s Bonnet',
+        Neck = 'Ashura Necklace',
+        Ear1 = 'Wing Earring',
+        Ear2 = 'Wing Earring',
+        Body = 'Assassin\'s Vest',
         Hands = 'Pln. Dastanas',
         Ring1 = 'Archer\'s Ring',
         Ring2 = 'Rajas Ring',
