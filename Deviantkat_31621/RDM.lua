@@ -223,14 +223,14 @@ profile.OnLoad = function()
         Neck = 'Aesir Torque',
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
-        Body = 'Warlock\'s Tabard',
-        Hands = 'Warlock\'s Gloves',
+        Body = 'Yigit Gomlek',
+        Hands = 'Yigit Gages',
         Ring1 = 'Demon\'s Ring',
         Ring2 = 'Demon\'s Ring',
         Back = 'Federal Army Mantle',
         Waist = 'Qiqirn Sash',
         Legs = 'Libra Subligar',
-        Feet = 'Warlock\'s Boots',
+        Feet = 'Yigit Crackows',
     });
 end
 
