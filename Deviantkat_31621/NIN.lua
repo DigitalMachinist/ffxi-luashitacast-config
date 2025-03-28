@@ -90,7 +90,7 @@ profile.OnLoad = function()
         Ring2 = 'Rajas Ring',
         Back = 'Rancorous Mantle',
         Waist = 'Swordbelt',
-        Legs = 'Pln. Seraweels',
+        Legs = 'Koga Hakama',
         Feet = 'Pln. Crackows',
     });
     main.RegisterStanceGearset(consts.TP, {
@@ -108,7 +108,7 @@ profile.OnLoad = function()
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Cloak',
         Waist = 'Swordbelt',
-        Legs = 'Pln. Seraweels',
+        Legs = 'Koga Hakama',
         Feet = 'Pln. Crackows',
     });
     main.RegisterStanceGearset(consts.RECOVER, {
@@ -245,7 +245,7 @@ profile.OnLoad = function()
         Legs = 'Ninja Hakama',
     });
     main.RegisterTimeOfDayGearset(consts.TANK, consts.TANK_NIGHT, 18, 6, {
-        Legs = 'Ninja Hakama',
+        Legs = 'Koga Hakama',
         Feet = 'Ninja Kyahan',
     });
     main.RegisterTimeOfDayGearset(consts.UTILITY, consts.UTILITY_NIGHT, 18, 6, {
