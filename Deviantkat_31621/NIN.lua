@@ -84,14 +84,14 @@ profile.OnLoad = function()
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
-        Body = 'Pln. Khazagand',
+        Body = 'Ninja Chainmail',
         Hands = 'Ochimusha Kote',
         Ring1 = 'Archer\'s Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Rancorous Mantle',
         Waist = 'Swordbelt',
         Legs = 'Koga Hakama',
-        Feet = 'Pln. Crackows',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TP, {
         -- Optimize for combat vs. IT+
@@ -109,7 +109,7 @@ profile.OnLoad = function()
         Back = 'Behemoth Cloak',
         Waist = 'Swordbelt',
         Legs = 'Koga Hakama',
-        Feet = 'Pln. Crackows',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.RECOVER, {
         -- Bonuses to Eva, HP, Def
@@ -143,7 +143,7 @@ profile.OnLoad = function()
         Back = 'Bat Cape',
         Waist = 'Survival Belt',
         Legs = 'Pln. Seraweels',
-        Feet = 'Pln. Crackows',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
@@ -186,6 +186,7 @@ profile.OnLoad = function()
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
         Back = 'Federal Army Mantle',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterMidcastGearset(main.Consts.MIDCAST, {
         -- Bonuses to INT, Ninjutsu
@@ -199,18 +200,7 @@ profile.OnLoad = function()
     -- Ranged
     main.RegisterPreshotGearset(main.Consts.PRESHOT, {
         -- Bonuses to Haste
-        Head = 'Empress Hairpin',
-        Neck = 'Ashura Necklace',
-        Ear1 = 'Wing Earring',
-        Ear2 = 'Wing Earring',
-        Body = 'Pln. Khazagand',
-        Hands = 'Ninja Tekko',
-        Ring1 = 'Scorpion Ring',
-        Ring2 = 'Archer\'s Ring',
-        Back = 'Federal Army Mantle',
-        Waist = 'Flagellant\'s Rope',
-        Legs = 'Ninja Hakama',
-        Feet = 'Ninja Kyahan',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterMidcastGearset(main.Consts.MIDSHOT, {
         -- Bonuses to RAcc, RAtk, AGI
@@ -235,23 +225,22 @@ profile.OnLoad = function()
 
     -- Stances (Time-of-day)
     main.RegisterTimeOfDayGearset(consts.FARM, consts.FARM_NIGHT, 18, 6, {
-        Legs = 'Ninja Hakama',
-        Feet = 'Ninja Kyahan',
-    });
-    main.RegisterTimeOfDayGearset(consts.TP, consts.TP_NIGHT, 18, 6, {
-        Legs = 'Ninja Hakama',
-    });
-    main.RegisterTimeOfDayGearset(consts.RECOVER, consts.RECOVER_NIGHT, 18, 6, {
-        Legs = 'Ninja Hakama',
-    });
-    main.RegisterTimeOfDayGearset(consts.TANK, consts.TANK_NIGHT, 18, 6, {
         Legs = 'Koga Hakama',
         Feet = 'Ninja Kyahan',
     });
+    main.RegisterTimeOfDayGearset(consts.TP, consts.TP_NIGHT, 18, 6, {
+        Legs = 'Koga Hakama',
+    });
+    main.RegisterTimeOfDayGearset(consts.RECOVER, consts.RECOVER_NIGHT, 18, 6, {
+        Legs = 'Koga Hakama',
+    });
+    main.RegisterTimeOfDayGearset(consts.TANK, consts.TANK_NIGHT, 18, 6, {
+        Head = 'Koga Hatsuburi',
+        Legs = 'Koga Hakama',
+    });
     main.RegisterTimeOfDayGearset(consts.UTILITY, consts.UTILITY_NIGHT, 18, 6, {
         Body = 'Pln. Khazagand',
-        Legs = 'Ninja Hakama',
-        Feet = 'Ninja Kyahan',
+        Legs = 'Koga Hakama',
     });
 
     -- Stances (Weekday)
