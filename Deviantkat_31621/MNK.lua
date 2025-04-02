@@ -73,16 +73,68 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.FARM, {
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
+        Main = 'Darksteel Katars',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Wing Earring',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Jiujitsu Sitabaki',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TP, {
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
+        Main = 'Darksteel Katars',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Wing Earring',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Jiujitsu Sitabaki',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.CAST, {
         -- Bonuses to MP, Refresh, MND
+        Main = 'Darksteel Katars',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Wing Earring',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Jiujitsu Sitabaki',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TANK, {
         -- Bonuses to Eva, HP, Def, Resistance
+        Main = 'Darksteel Katars',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Wing Earring',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Jiujitsu Sitabaki',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',

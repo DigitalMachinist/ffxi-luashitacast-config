@@ -73,16 +73,72 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.FARM, {
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
+        Main = 'Shinsoku',
+        --Sub = 'GRIP?',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Suppanomimi',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Raptor Trousers',
+        Feet = 'Saotome Sune-Ate',
     });
     main.RegisterStanceGearset(consts.TP, {
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
+        Main = 'Shinsoku',
+        --Sub = 'GRIP?',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Suppanomimi',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Raptor Trousers',
+        Feet = 'Saotome Sune-Ate',
     });
     main.RegisterStanceGearset(consts.CAST, {
         -- Bonuses to MP, Refresh, MND
+        Main = 'Shinsoku',
+        --Sub = 'GRIP?',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Suppanomimi',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Raptor Trousers',
+        Feet = 'Saotome Sune-Ate',
     });
     main.RegisterStanceGearset(consts.TANK, {
         -- Bonuses to Eva, HP, Def, Resistance
+        Main = 'Shinsoku',
+        --Sub = 'GRIP?',
+        Head = 'Empress Hairpin',
+        Neck = 'Asura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Suppanomimi',
+        Body = 'Scorpion Harness',
+        Hands = 'Onimusha Kote',
+        Ring1 = 'Archer\'s Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Purple Belt',
+        Legs = 'Raptor Trousers',
+        Feet = 'Saotome Sune-Ate',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
@@ -96,13 +152,13 @@ profile.OnLoad = function()
     });
 
     -- Ranged Weapons
-    main.RegisterRangedWeaponGearset(main.Consts.AMMO_THROW, consts.RANGED, {
-        Range = nil,
+    main.RegisterRangedWeaponGearset(main.Consts.AMMO_ARROW, consts.RANGED, {
+        Range = 'War Bow',
     });
 
     -- Ranged Ammo
-    main.RegisterRangedAmmoGearset(main.Consts.AMMO_THROW, consts.AMMO, {
-        Ammo = nil,
+    main.RegisterRangedAmmoGearset(main.Consts.AMMO_ARROW, consts.AMMO, {
+        Ammo = 'Horn Arrow',
     });
 
     -- Weaponskills
