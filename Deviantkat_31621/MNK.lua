@@ -83,8 +83,8 @@ profile.OnLoad = function()
         Ring1 = 'Archer\'s Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
-        Waist = 'Purple Belt',
-        Legs = 'Jiujitsu Sitabaki',
+        Waist = 'Brown Belt',
+        Legs = 'Jujitsu Sitabaki',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TP, {
@@ -100,8 +100,8 @@ profile.OnLoad = function()
         Ring1 = 'Archer\'s Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
-        Waist = 'Purple Belt',
-        Legs = 'Jiujitsu Sitabaki',
+        Waist = 'Brown Belt',
+        Legs = 'Jujitsu Sitabaki',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.CAST, {
@@ -116,8 +116,8 @@ profile.OnLoad = function()
         Ring1 = 'Archer\'s Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
-        Waist = 'Purple Belt',
-        Legs = 'Jiujitsu Sitabaki',
+        Waist = 'Brown Belt',
+        Legs = 'Jujitsu Sitabaki',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TANK, {
@@ -132,8 +132,8 @@ profile.OnLoad = function()
         Ring1 = 'Archer\'s Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
-        Waist = 'Purple Belt',
-        Legs = 'Jiujitsu Sitabaki',
+        Waist = 'Muscle Belt',
+        Legs = 'Jujitsu Sitabaki',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
