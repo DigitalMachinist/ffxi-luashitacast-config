@@ -73,7 +73,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.FARM, {
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
-        Main = 'Tigerfangs',
+        Main = 'Metasoma Katars',
         Head = 'Empress Hairpin',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
@@ -90,7 +90,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TP, {
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
-        Main = 'Tigerfangs',
+        Main = 'Metasoma Katars',
         Head = 'Empress Hairpin',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
@@ -106,7 +106,7 @@ profile.OnLoad = function()
     });
     main.RegisterStanceGearset(consts.CAST, {
         -- Bonuses to MP, Refresh, MND
-        Main = 'Tigerfangs',
+        Main = 'Metasoma Katars',
         Head = 'Empress Hairpin',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
@@ -122,7 +122,7 @@ profile.OnLoad = function()
     });
     main.RegisterStanceGearset(consts.TANK, {
         -- Bonuses to Eva, HP, Def, Resistance
-        Main = 'Tigerfangs',
+        Main = 'Metasoma Katars',
         Head = 'Empress Hairpin',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
