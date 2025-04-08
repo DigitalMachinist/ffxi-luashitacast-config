@@ -78,13 +78,13 @@ profile.OnLoad = function()
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
-        Body = 'Scorpion Harness',
+        Body = 'Pln. Khazagand',
         Hands = 'Onimusha Kote',
         Ring1 = 'Ruby Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
         Waist = 'Brown Belt',
-        Legs = 'Jujitsu Sitabaki',
+        Legs = 'Melee Hose',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TP, {
@@ -95,13 +95,13 @@ profile.OnLoad = function()
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
-        Body = 'Scorpion Harness',
+        Body = 'Pln. Khazagand',
         Hands = 'Onimusha Kote',
         Ring1 = 'Ruby Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
         Waist = 'Brown Belt',
-        Legs = 'Jujitsu Sitabaki',
+        Legs = 'Melee Hose',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.CAST, {
@@ -111,13 +111,13 @@ profile.OnLoad = function()
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
-        Body = 'Scorpion Harness',
+        Body = 'Pln. Khazagand',
         Hands = 'Onimusha Kote',
         Ring1 = 'Ruby Ring',
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
         Waist = 'Brown Belt',
-        Legs = 'Jujitsu Sitabaki',
+        Legs = 'Melee Hose',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TANK, {
@@ -133,7 +133,7 @@ profile.OnLoad = function()
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
         Waist = 'Muscle Belt',
-        Legs = 'Jujitsu Sitabaki',
+        Legs = 'Melee Hose',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
