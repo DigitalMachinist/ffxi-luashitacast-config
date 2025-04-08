@@ -134,7 +134,7 @@ profile.OnLoad = function()
         Back = 'Behemoth Mantle',
         Waist = 'Muscle Belt',
         Legs = 'Melee Hose',
-        Feet = 'Sarutobi Kyahan',
+        Feet = 'Melee Gaiters',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
