@@ -75,7 +75,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Atk, STR
         Main = 'Mst.Cst.Baghnakhs',
         Head = 'Empress Hairpin',
-        Neck = 'Asura Necklace',
+        Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
         Body = 'Pln. Khazagand',
@@ -92,7 +92,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Mst.Cst.Baghnakhs',
         Head = 'Empress Hairpin',
-        Neck = 'Asura Necklace',
+        Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
         Body = 'Pln. Khazagand',
@@ -108,7 +108,7 @@ profile.OnLoad = function()
         -- Bonuses to MP, Refresh, MND
         Main = 'Mst.Cst.Baghnakhs',
         Head = 'Empress Hairpin',
-        Neck = 'Asura Necklace',
+        Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
         Body = 'Pln. Khazagand',
@@ -124,7 +124,7 @@ profile.OnLoad = function()
         -- Bonuses to Eva, HP, Def, Resistance
         Main = 'Mst.Cst.Baghnakhs',
         Head = 'Empress Hairpin',
-        Neck = 'Asura Necklace',
+        Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
         Body = 'Scorpion Harness',
