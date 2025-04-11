@@ -20,10 +20,25 @@ local consts = {
     AMMO = 'Ammo',
 
     -- Weaponskills
-    -- None
+    COMBO = 'Combo',
+    SHOULDER_TACKLE = 'ShoulderTackle',
+    ONE_INCH_PUNCH = 'OneInchPunch',
+    BACKHAND_BLOW = 'BackhandBlow',
+    RAGING_FISTS = 'RagingFists',
+    SPINNING_ATTACK = 'SpinningAttack',
+    HOWLING_FIST = 'HowlingFist',
+    DRAGON_KICK = 'DragonKick',
+    ASURAN_FISTS = 'AsuranFists',
 
     -- Ability
-    -- None
+    FOCUS = 'Focus',
+    DODGE = 'Dodge',
+    CHAKRA = 'Chakra',
+    BOOST = 'Boost',
+    COUNTERSTANCE = 'Counterstance',
+    CHI_BLAST = 'ChiBlast',
+    FOOTWORK = 'Footwork',
+    PERFECT_COUNTER = 'PerfectCounter',
 
     -- Stances (Time of Day)
     -- None
@@ -121,7 +136,8 @@ profile.OnLoad = function()
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterStanceGearset(consts.TANK, {
-        -- Bonuses to Eva, HP, Def, Resistance
+        -- -Def, +Eva, +HP, +Counter
+        -- Note: Def from equipment has no effect under Counterstance
         Main = 'Maochinoli',
         Head = 'Empress Hairpin',
         Neck = 'Ashura Necklace',
@@ -144,7 +160,7 @@ profile.OnLoad = function()
         Back = 'Nexus Cape',
     });
     main.RegisterStanceGearset(consts.SPECIAL, {
-        -- Nothing just yet
+        Main = 'Knuckles of Trials',
     });
 
     -- Ranged Weapons
@@ -158,10 +174,70 @@ profile.OnLoad = function()
     });
 
     -- Weaponskills
-    -- main.RegisterWeaponskillGearset(consts.BLADE_JIN, 'Blade: Jin', { });
+    main.RegisterWeaponskillGearset(consts.COMBO, 'Combo', {
+        -- Description:	Delivers a threefold attack. Damage varies with TP.
+        -- Modifiers:	STR:30% ; DEX:30%
+    });
+    main.RegisterWeaponskillGearset(consts.SHOULDER_TACKLE, 'Shoulder Tackle', {
+        -- Description:	Stuns target. Chance of stunning varies with TP.
+        -- Modifiers:	VIT:100%
+    });
+    main.RegisterWeaponskillGearset(consts.ONE_INCH_PUNCH, 'One Inch Punch', {
+        -- Description:	Delivers an attack that ignores target's defense. Amount ignored varies with TP.
+        -- Modifiers:	VIT:100%
+    });
+    main.RegisterWeaponskillGearset(consts.BACKHAND_BLOW, 'Backhand Blow', {
+        -- Description:	Deals critical damage. Chance of critical hit varies with TP.
+        -- Modifiers:	STR:50% DEX:50%
+    });
+    main.RegisterWeaponskillGearset(consts.RAGING_FISTS, 'Raging Fists', {
+        -- Description:	Delivers a fivefold attack. Damage varies with TP.
+        -- Modifiers:	STR:30% ; DEX:30%
+    });
+    main.RegisterWeaponskillGearset(consts.SPINNING_ATTACK, 'Spinning Attack', {
+        -- Description:	Delivers an area attack. Radius varies with TP.
+        -- Modifiers:	STR:100%
+    });
+    main.RegisterWeaponskillGearset(consts.HOWLING_FIST, 'Howling Fist', {
+        -- Description:	Damage varies with TP.
+        -- Modifiers:	STR:40% ; VIT:40%
+    });
+    main.RegisterWeaponskillGearset(consts.DRAGON_KICK, 'Dragon Kick', {
+        -- Description:	Damage varies with TP.
+        -- Modifiers:	STR:50% ; DEX:50%
+    });
+    main.RegisterWeaponskillGearset(consts.ASURAN_FISTS, 'Asuran Fists', {
+        -- Description:	Delivers an eightfold attack. Accuracy varies with TP.
+        -- Modifiers:	STR:20% ; VIT:20%
+    });
 
     -- Abilities
-    -- main.RegisterAbilityGearset(consts.HIDE, consts.HIDE, { });
+    main.RegisterAbilityGearset(consts.FOCUS, consts.FOCUS, {
+        Head = 'Temple Crown',
+    });
+    main.RegisterAbilityGearset(consts.DODGE, consts.DODGE, {
+        Feet = 'Temple Gaiters',
+    });
+    main.RegisterAbilityGearset(consts.CHAKRA, consts.CHAKRA, {
+        -- +VIT
+        Body = 'Temple Cyclas',
+    });
+    main.RegisterAbilityGearset(consts.BOOST, consts.BOOST, {
+        -- +STR
+        Hands = 'Temple Gloves',
+    });
+    main.RegisterAbilityGearset(consts.COUNTERSTANCE, consts.COUNTERSTANCE, {
+        -- -Def, +Eva, +Counter
+        Feet = 'Melee Gaiters',
+    });
+    main.RegisterAbilityGearset(consts.CHI_BLAST, consts.CHI_BLAST, {
+        -- +MND
+        Head = 'Temple Crown',
+    });
+    -- main.RegisterAbilityGearset(consts.FOOTWORK, consts.FOOTWORK, {
+    -- });
+    -- main.RegisterAbilityGearset(consts.PERFECT_COUNTER, consts.PERFECT_COUNTER, {
+    -- });
 
     -- Casting
     main.RegisterPrecastGearset(main.Consts.PRECAST, {
