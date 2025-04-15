@@ -89,7 +89,7 @@ profile.OnLoad = function()
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
         Main = 'Maochinoli',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
@@ -106,7 +106,7 @@ profile.OnLoad = function()
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Maochinoli',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
@@ -122,7 +122,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.CAST, {
         -- Bonuses to MP, Refresh, MND
         Main = 'Maochinoli',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',
@@ -139,7 +139,7 @@ profile.OnLoad = function()
         -- -Def, +Eva, +HP, +Counter
         -- Note: Def from equipment has no effect under Counterstance
         Main = 'Maochinoli',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Wing Earring',

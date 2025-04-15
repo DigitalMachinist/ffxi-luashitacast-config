@@ -106,7 +106,7 @@ profile.OnLoad = function()
         -- Bonuses to STR, DEX, Atk
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
-        Head = 'Pln. Qalansuwa',
+        Head = 'Optical Hat',
         Neck = 'Jeweled Collar',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -123,7 +123,7 @@ profile.OnLoad = function()
         -- Bonuses to DEX, Acc
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
-        Head = 'Pln. Qalansuwa',
+        Head = 'Optical Hat',
         Neck = 'Jeweled Collar',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -140,7 +140,7 @@ profile.OnLoad = function()
         -- Bonuses to MP, INT, MND
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
-        Head = 'Rogue\'s Bonnet',
+        Head = 'Optical Hat',
         Neck = 'Aesir Torque',
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
@@ -157,7 +157,7 @@ profile.OnLoad = function()
         -- Bonuses to Eva, HP, Def, -Enmity
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',

@@ -75,7 +75,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Atk, STR
         Main = 'Shinsoku',
         --Sub = 'GRIP?',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -93,7 +93,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Shinsoku',
         --Sub = 'GRIP?',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -110,7 +110,7 @@ profile.OnLoad = function()
         -- Bonuses to MP, Refresh, MND
         Main = 'Shinsoku',
         --Sub = 'GRIP?',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -127,7 +127,7 @@ profile.OnLoad = function()
         -- Bonuses to Eva, HP, Def, Resistance
         Main = 'Shinsoku',
         --Sub = 'GRIP?',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Asura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',

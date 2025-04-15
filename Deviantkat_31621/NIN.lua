@@ -80,7 +80,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Atk, STR
         Main = 'Mamushito',
         Sub = 'Mamushito',
-        Head = 'Pln. Qalansuwa',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -98,7 +98,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Mamushito',
         Sub = 'Mamushito',
-        Head = 'Pln. Qalansuwa',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -115,7 +115,7 @@ profile.OnLoad = function()
         -- Bonuses to Eva, HP, Def
         Main = 'Mamushito',
         Sub = 'Mamushito',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',
@@ -132,7 +132,7 @@ profile.OnLoad = function()
         -- Bonuses to Eva, HP, Def
         Main = 'Mamushito',
         Sub = 'Mamushito',
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',

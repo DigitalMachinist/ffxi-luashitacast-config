@@ -101,7 +101,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Atk, STR
         Main = 'Fransisca',
         Sub = 'Hawker\'s Knife +1',
-        Head = 'Hunter\'s Beret',
+        Head = 'Optical Hat',
         Neck = 'Ranger\'s Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',
@@ -119,7 +119,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Fransisca',
         Sub = 'Hawker\'s Knife +1',
-        Head = 'Hunter\'s Beret',
+        Head = 'Optical Hat',
         Neck = 'Ranger\'s Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',
@@ -136,7 +136,7 @@ profile.OnLoad = function()
         -- Bonuses to MP, Refresh, MND
         Main = 'Fransisca',
         Sub = 'Hawker\'s Knife +1',
-        Head = 'Hunter\'s Beret',
+        Head = 'Optical Hat',
         Neck = 'Ranger\'s Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',
@@ -153,7 +153,7 @@ profile.OnLoad = function()
         -- Bonuses to Eva, HP, Def, Resistance
         Main = 'Fransisca',
         Sub = 'Hawker\'s Knife +1',
-        Head = 'Hunter\'s Beret',
+        Head = 'Optical Hat',
         Neck = 'Ranger\'s Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',
