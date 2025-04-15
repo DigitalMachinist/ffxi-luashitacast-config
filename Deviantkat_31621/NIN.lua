@@ -235,7 +235,7 @@ profile.OnLoad = function()
         Legs = 'Koga Hakama',
     });
     main.RegisterTimeOfDayGearset(consts.TANK, consts.TANK_NIGHT, 18, 6, {
-        Head = 'Koga Hatsuburi',
+        -- Head = 'Koga Hatsuburi',
         Legs = 'Koga Hakama',
     });
     main.RegisterTimeOfDayGearset(consts.UTILITY, consts.UTILITY_NIGHT, 18, 6, {
