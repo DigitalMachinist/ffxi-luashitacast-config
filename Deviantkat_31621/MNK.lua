@@ -93,7 +93,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.FARM, {
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
-        Main = 'Maochinoli',
+        Main = 'Spharai',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
@@ -110,7 +110,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TP, {
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
-        Main = 'Maochinoli',
+        Main = 'Spharai',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Suppanomimi',
@@ -126,7 +126,7 @@ profile.OnLoad = function()
     });
     main.RegisterStanceGearset(consts.CAST, {
         -- Bonuses to MP, Refresh, MND
-        Main = 'Maochinoli',
+        Main = 'Spharai',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
@@ -143,7 +143,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TANK, {
         -- -Def, +Eva, +HP, +Counter
         -- Note: Def from equipment has no effect under Counterstance
-        Main = 'Maochinoli',
+        Main = 'Spharai',
         Head = 'Tiger Mask',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
