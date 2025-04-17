@@ -21,14 +21,16 @@ local consts = {
 
     -- Weaponskills
     COMBO = 'Combo',
-    SHOULDER_TACKLE = 'ShoulderTackle',
-    ONE_INCH_PUNCH = 'OneInchPunch',
-    BACKHAND_BLOW = 'BackhandBlow',
-    RAGING_FISTS = 'RagingFists',
-    SPINNING_ATTACK = 'SpinningAttack',
-    HOWLING_FIST = 'HowlingFist',
-    DRAGON_KICK = 'DragonKick',
-    ASURAN_FISTS = 'AsuranFists',
+    SHOULDER_TACKLE = 'Shoulder Tackle',
+    ONE_INCH_PUNCH = 'One Inch Punch',
+    BACKHAND_BLOW = 'Backhand Blow',
+    RAGING_FISTS = 'Raging Fists',
+    SPINNING_ATTACK = 'Spinning Attack',
+    HOWLING_FIST = 'Howling Fist',
+    DRAGON_KICK = 'Dragon Kick',
+    ASURAN_FISTS = 'Asuran Fists',
+    FINAL_HEAVEN = 'Final Heaven',
+    SHIJIN_SPIRAL = 'Shijin Spiral',
 
     -- Ability
     FOCUS = 'Focus',
@@ -36,12 +38,15 @@ local consts = {
     CHAKRA = 'Chakra',
     BOOST = 'Boost',
     COUNTERSTANCE = 'Counterstance',
-    CHI_BLAST = 'ChiBlast',
+    CHI_BLAST = 'Chi Blast',
     FOOTWORK = 'Footwork',
-    PERFECT_COUNTER = 'PerfectCounter',
+    PERFECT_COUNTER = 'Perfect Counter',
 
     -- Stances (Time of Day)
     -- None
+
+    -- Stances (Health)
+    TANK_UNDER_75_PERCENT_HP = 'TankUnder75PercentHP',
 
     -- Stances (Weekday)
     -- None
@@ -92,7 +97,7 @@ profile.OnLoad = function()
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
-        Ear2 = 'Wing Earring',
+        Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
         Hands = 'Ochimusha Kote',
         Ring1 = 'Ruby Ring',
@@ -108,7 +113,7 @@ profile.OnLoad = function()
         Main = 'Maochinoli',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
-        Ear1 = 'Giant\'s Earring',
+        Ear1 = 'Suppanomimi',
         Ear2 = 'Wing Earring',
         Body = 'Pln. Khazagand',
         Hands = 'Ochimusha Kote',
@@ -125,7 +130,7 @@ profile.OnLoad = function()
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
-        Ear2 = 'Wing Earring',
+        Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
         Hands = 'Ochimusha Kote',
         Ring1 = 'Ruby Ring',
@@ -142,7 +147,7 @@ profile.OnLoad = function()
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
-        Ear2 = 'Wing Earring',
+        Ear2 = 'Suppanomimi',
         Body = 'Scorpion Harness',
         Hands = 'Ochimusha Kote',
         Ring1 = 'Ruby Ring',
@@ -150,7 +155,7 @@ profile.OnLoad = function()
         Back = 'Behemoth Mantle',
         Waist = 'Muscle Belt',
         Legs = 'Melee Hose',
-        Feet = 'Melee Gaiters',
+        Feet = 'Temple Gaiters',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
@@ -160,7 +165,7 @@ profile.OnLoad = function()
         Back = 'Nexus Cape',
     });
     main.RegisterStanceGearset(consts.SPECIAL, {
-        Main = 'Knuckles of Trials',
+        -- Main = 'Knuckles of Trials',
     });
 
     -- Ranged Weapons
@@ -174,22 +179,22 @@ profile.OnLoad = function()
     });
 
     -- Weaponskills
-    main.RegisterWeaponskillGearset(consts.COMBO, 'Combo', {
-        -- Description:	Delivers a threefold attack. Damage varies with TP.
-        -- Modifiers:	STR:30% ; DEX:30%
-    });
-    main.RegisterWeaponskillGearset(consts.SHOULDER_TACKLE, 'Shoulder Tackle', {
-        -- Description:	Stuns target. Chance of stunning varies with TP.
-        -- Modifiers:	VIT:100%
-    });
-    main.RegisterWeaponskillGearset(consts.ONE_INCH_PUNCH, 'One Inch Punch', {
-        -- Description:	Delivers an attack that ignores target's defense. Amount ignored varies with TP.
-        -- Modifiers:	VIT:100%
-    });
-    main.RegisterWeaponskillGearset(consts.BACKHAND_BLOW, 'Backhand Blow', {
-        -- Description:	Deals critical damage. Chance of critical hit varies with TP.
-        -- Modifiers:	STR:50% DEX:50%
-    });
+    -- main.RegisterWeaponskillGearset(consts.COMBO, 'Combo', {
+    --     -- Description:	Delivers a threefold attack. Damage varies with TP.
+    --     -- Modifiers:	STR:30% ; DEX:30%
+    -- });
+    -- main.RegisterWeaponskillGearset(consts.SHOULDER_TACKLE, 'Shoulder Tackle', {
+    --     -- Description:	Stuns target. Chance of stunning varies with TP.
+    --     -- Modifiers:	VIT:100%
+    -- });
+    -- main.RegisterWeaponskillGearset(consts.ONE_INCH_PUNCH, 'One Inch Punch', {
+    --     -- Description:	Delivers an attack that ignores target's defense. Amount ignored varies with TP.
+    --     -- Modifiers:	VIT:100%
+    -- });
+    -- main.RegisterWeaponskillGearset(consts.BACKHAND_BLOW, 'Backhand Blow', {
+    --     -- Description:	Deals critical damage. Chance of critical hit varies with TP.
+    --     -- Modifiers:	STR:50% ; DEX:50%
+    -- });
     main.RegisterWeaponskillGearset(consts.RAGING_FISTS, 'Raging Fists', {
         -- Description:	Delivers a fivefold attack. Damage varies with TP.
         -- Modifiers:	STR:30% ; DEX:30%
@@ -209,6 +214,26 @@ profile.OnLoad = function()
     main.RegisterWeaponskillGearset(consts.ASURAN_FISTS, 'Asuran Fists', {
         -- Description:	Delivers an eightfold attack. Accuracy varies with TP.
         -- Modifiers:	STR:20% ; VIT:20%
+    });
+    main.RegisterWeaponskillGearset(consts.FINAL_HEAVEN, 'Final Heaven', {
+        -- Description:	Additional effect: temporarily enhances Subtle Blow effect.
+        -- Modifiers:	VIT:80%
+    });
+    main.RegisterWeaponskillGearset(consts.SHIJIN_SPIRAL, 'Shijin Spiral', {
+        -- Description:	Delivers a fivefold attack that plagues the target. Chance of additional effect varies with TP.
+        -- Modifiers:	DEX:73-85%
+        Head = 'Optical Hat',
+        Neck = 'Ashura Necklace',
+        Ear1 = 'Giant\'s Earring',
+        Ear2 = 'Suppanomimi',
+        Body = 'Pln. Khazagand',
+        Hands = 'Ochimusha Kote',
+        Ring1 = 'Spinel Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Rancorous Mantle',
+        Waist = 'Brown Belt',
+        Legs = 'Pln. Seraweels',
+        Feet = 'Melee Gaiters',
     });
 
     -- Abilities
@@ -263,6 +288,12 @@ profile.OnLoad = function()
 
     -- Resting
     main.RegsiterRestingGearset(main.Consts.RESTING, {
+    });
+
+    -- Stances (Health)
+    main.RegisterHealthGearset(consts.TANK, consts.TANK_UNDER_75_PERCENT_HP, 0, 75, {
+        Waist = 'Muscle Belt',
+        Ring = 'Kampfer Ring',
     });
 end
 

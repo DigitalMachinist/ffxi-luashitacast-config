@@ -24,10 +24,12 @@ main.Consts = {
     -- Resting
     RESTING = '__Resting',
 
-    -- Time-of-Day
+    -- Time-of-Day & Health
     LOOKUP_KEY = 'LookupKey',
     START_TIME = 'StartTime',
     END_TIME = 'EndTime',
+    START_PERCENT = 'StartPercent',
+    END_PERCENT = 'EndPercent',
 
     -- Weekdays (In Order)
     FIRESDAY = 'Firesday',
@@ -203,10 +205,12 @@ main.HandleDefault = function()
         return;
     end
     
+    local player = gData.GetPlayer();
     main.EquipStanceGearset();
     main.EquipRangedWeaponGearset();
     main.EquipRangedAmmoGearset();
     main.EquipTimeOfDayGearset();
+    main.EquipHealthGearset();
     main.EquipWeekdayGearset();
     main.EquipWeatherElementGearset();
     main.EquipMoonPhaseGearset();
@@ -359,6 +363,26 @@ main.EquipTimeOfDayGearset = function()
     end
 end
 
+main.EquipHealthGearset = function()
+    -- This limits us to one health rule per gearset.
+    local player = gData.GetPlayer();
+    local healthInfo = main.GearsetHealthRules[main.Settings.STANCE];
+    if (healthInfo ~= nil) then
+        local gearsetKey = healthInfo[main.Consts.LOOKUP_KEY];
+        local startPercent = healthInfo[main.Consts.START_PERCENT];
+        local endPercent = healthInfo[main.Consts.END_PERCENT];
+        if (startPercent < endPercent and (player.HPP >= startPercent and player.HPP < endPercent)) then
+            -- Start percent is less than end percent, therefore HP is a continuous range.
+            -- 0 [ x x x <===============> x x x ] 100
+            main.EquipGearset(gearsetKey);
+        elseif (startPercent > endPercent and (player.HPP >= startPercent or player.HPP < endPercent)) then
+            -- End percent is less than start percent, therefore the range is split around the extremes.
+            -- 0 [=======> x x x x x x x <=======] 100
+            main.EquipGearset(gearsetKey);
+        end
+    end
+end
+
 main.EquipWeekdayGearset = function()
     local environment = gData.GetEnvironment();
     local weekdayGearsetKey = main.GetGearsetLookupKey(main.Settings.STANCE, environment.Day);
@@ -447,6 +471,15 @@ main.RegisterTimeOfDayGearset = function(baseGearsetKey, gearsetKey, startTime, 
     main.GearsetTimeOfDayRules[baseGearsetKey][main.Consts.LOOKUP_KEY] = gearsetKey;
     main.GearsetTimeOfDayRules[baseGearsetKey][main.Consts.START_TIME] = startTime;
     main.GearsetTimeOfDayRules[baseGearsetKey][main.Consts.END_TIME] = endTime;
+    main.RegisterGearset(gearsetKey, gearsetTable);
+end
+
+main.RegisterHealthGearset = function(baseGearsetKey, gearsetKey, startPercent, endPercent, gearsetTable)
+    -- This kinda sucks because it limits you to one health rule per gearset.
+    main.GearsetHealthRules[baseGearsetKey] = {};
+    main.GearsetHealthRules[baseGearsetKey][main.Consts.LOOKUP_KEY] = gearsetKey;
+    main.GearsetHealthRules[baseGearsetKey][main.Consts.START_PERCENT] = startPercent;
+    main.GearsetHealthRules[baseGearsetKey][main.Consts.END_PERCENT] = endPercent;
     main.RegisterGearset(gearsetKey, gearsetTable);
 end
 

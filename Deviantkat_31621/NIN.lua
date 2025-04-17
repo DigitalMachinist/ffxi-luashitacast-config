@@ -242,6 +242,11 @@ profile.OnLoad = function()
         Body = 'Pln. Khazagand',
         Legs = 'Koga Hakama',
     });
+    
+    -- Stances (Health)
+    -- main.RegisterHealthGearset(consts.TANK, consts.TANK_YELLOW_HP, 0, 75, {
+    --     Ring = 'Kampfer Ring',
+    -- });
 
     -- Stances (Weekday)
     -- main.RegisterWeekdayGearset(consts.TANK, consts.TANK_ICEDAY, main.Consts.ICEDAY, { });
