@@ -303,6 +303,9 @@ main.GearsetLookup = {};
 -- Maps from a base gearset key name to start/end times and a gearset lookup key.
 main.GearsetTimeOfDayRules = {};
 
+-- Maps from a base gearset key name to start/end HP percentages and a gearset lookup key.
+main.GearsetHealthRules = {};
+
 -- Maps from a stance name to a gearset key.
 main.GearsetStances = {};
 
