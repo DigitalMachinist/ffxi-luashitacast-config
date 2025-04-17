@@ -154,8 +154,8 @@ profile.OnLoad = function()
         Ring2 = 'Rajas Ring',
         Back = 'Behemoth Mantle',
         Waist = 'Muscle Belt',
-        Legs = 'Melee Hose',
-        Feet = 'Temple Gaiters',
+        Legs = 'Temple Hose',
+        Feet = 'Melee Gaiters',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
