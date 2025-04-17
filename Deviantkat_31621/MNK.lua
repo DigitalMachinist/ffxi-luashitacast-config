@@ -293,7 +293,7 @@ profile.OnLoad = function()
     -- Stances (Health)
     main.RegisterHealthGearset(consts.TANK, consts.TANK_UNDER_75_PERCENT_HP, 0, 75, {
         Waist = 'Muscle Belt',
-        Ring = 'Kampfer Ring',
+        Ring1 = 'Kampfer Ring',
     });
 end
 
