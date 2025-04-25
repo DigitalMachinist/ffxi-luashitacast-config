@@ -149,7 +149,7 @@ profile.OnLoad = function()
         Head = 'Sprout Beret',
         Body = 'Kupo Suit',
         Ring1 = 'Warp Ring',
-        Ring2 = 'Emperor Band',
+        Ring2 = 'Echad Ring',
         Back = 'Nexus Cape',
         Feet = 'Ninja Kyahan',
     });
