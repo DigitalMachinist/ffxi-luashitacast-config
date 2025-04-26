@@ -260,7 +260,7 @@ profile.OnLoad = function()
     });
     main.RegisterWeaponskillGearset(consts.DANCING_EDGE, consts.DANCING_EDGE, {
         -- Bonuses to DEX, CHR, Acc
-        Head = 'Assassin\'s Bonnet',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -290,7 +290,7 @@ profile.OnLoad = function()
     });
     main.RegisterWeaponskillGearset(consts.EVISCERATION, consts.EVISCERATION, {
         -- Bonuses to DEX, Acc
-        Head = 'Assassin\'s Bonnet',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
@@ -419,7 +419,7 @@ profile.OnLoad = function()
     });
     main.RegisterMidcastGearset(main.Consts.MIDSHOT, {
         -- Bonuses to RAcc, RAtk, AGI
-        Head = 'Empress Hairpin',
+        Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Wing Earring',
         Ear2 = 'Suppanomimi',
