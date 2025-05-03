@@ -165,7 +165,7 @@ profile.OnLoad = function()
         Back = 'Nexus Cape',
     });
     main.RegisterStanceGearset(consts.SPECIAL, {
-        -- Main = 'Knuckles of Trials',
+        Main = 'Maochinoli',
     });
 
     -- Ranged Weapons
