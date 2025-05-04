@@ -79,7 +79,7 @@ profile.OnLoad = function()
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
         Main = 'Mamushito',
-        Sub = 'Mamushito',
+        Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
@@ -97,7 +97,7 @@ profile.OnLoad = function()
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Mamushito',
-        Sub = 'Mamushito',
+        Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Giant\'s Earring',
@@ -114,7 +114,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.RECOVER, {
         -- Bonuses to Eva, HP, Def
         Main = 'Mamushito',
-        Sub = 'Mamushito',
+        Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Wing Earring',
@@ -131,7 +131,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TANK, {
         -- Bonuses to Eva, HP, Def
         Main = 'Mamushito',
-        Sub = 'Mamushito',
+        Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Wing Earring',
