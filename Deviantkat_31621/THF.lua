@@ -122,7 +122,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TP, {
         -- Bonuses to DEX, Acc
         Main = 'Batardeau',
-        Sub = 'X\'s Knife',
+        -- Sub = 'X\'s Knife',
         Head = 'Optical Hat',
         Neck = 'Jeweled Collar',
         Ear1 = 'Aesir Ear Pendant',
@@ -139,7 +139,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.CAST, {
         -- Bonuses to MP, INT, MND
         Main = 'Batardeau',
-        Sub = 'X\'s Knife',
+        -- Sub = 'X\'s Knife',
         Head = 'Optical Hat',
         Neck = 'Aesir Torque',
         Ear1 = 'Phantom Earring',
@@ -156,7 +156,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.SURVIVE, {
         -- Bonuses to Eva, HP, Def, -Enmity
         Main = 'Batardeau',
-        Sub = 'X\'s Knife',
+        -- Sub = 'X\'s Knife',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
         Ear1 = 'Aesir Ear Pendant',
@@ -173,7 +173,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TANK, {
         -- Bonuses to Eva, HP, Def, Enmity
         Main = 'Batardeau',
-        Sub = 'X\'s Knife',
+        -- Sub = 'X\'s Knife',
         Head = 'Assassin\'s Bonnet',
         Neck = 'Ashura Necklace',
         Ear1 = 'Aesir Ear Pendant',
@@ -200,6 +200,7 @@ profile.OnLoad = function()
     });
     main.RegisterStanceGearset(consts.TH, {
         Sub = 'Thief\'s Knife',
+        Head = 'Wh. Rarab Cap +1',
     });
 
     -- Ranged Weapons
