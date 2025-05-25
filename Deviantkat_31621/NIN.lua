@@ -78,7 +78,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.FARM, {
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
-        Main = 'Mamushito',
+        Main = 'Fudo',
         Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
@@ -96,7 +96,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TP, {
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
-        Main = 'Mamushito',
+        Main = 'Fudo',
         Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
@@ -113,7 +113,7 @@ profile.OnLoad = function()
     });
     main.RegisterStanceGearset(consts.RECOVER, {
         -- Bonuses to Eva, HP, Def
-        Main = 'Mamushito',
+        Main = 'Fudo',
         Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
@@ -130,7 +130,7 @@ profile.OnLoad = function()
     });
     main.RegisterStanceGearset(consts.TANK, {
         -- Bonuses to Eva, HP, Def
-        Main = 'Mamushito',
+        Main = 'Fudo',
         Sub = 'Taikogane',
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',

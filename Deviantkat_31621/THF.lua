@@ -107,7 +107,7 @@ profile.OnLoad = function()
         Main = 'Batardeau',
         Sub = 'X\'s Knife',
         Head = 'Optical Hat',
-        Neck = 'Jeweled Collar',
+        Neck = 'Ashura Necklace',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
@@ -124,7 +124,7 @@ profile.OnLoad = function()
         Main = 'Batardeau',
         -- Sub = 'X\'s Knife',
         Head = 'Optical Hat',
-        Neck = 'Jeweled Collar',
+        Neck = 'Ashura Necklace',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
@@ -339,7 +339,7 @@ profile.OnLoad = function()
         -- Bonuses to AGI, Acc
         Head = 'Empress Hairpin',
         Neck = 'Ashura Necklace',
-        Ear1 = 'Wing Earring',
+        Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
         Hands = 'Pln. Dastanas',
@@ -382,8 +382,8 @@ profile.OnLoad = function()
     main.RegisterAbilityGearset(consts.TRICK_ATTACK, consts.TRICK_ATTACK, {
         -- Bonuses to AGI, Atk
         Head = 'Empress Hairpin',
-        Neck = 'Rabbit Charm',
-        Ear1 = 'Wing Earring',
+        Neck = 'Ashura Necklace',
+        Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
         Hands = 'Rogue\'s Armlets',
@@ -402,7 +402,7 @@ profile.OnLoad = function()
     main.RegisterMidcastGearset(main.Consts.MIDCAST, {
         -- Bonuses to MP, INT, MND
         Head = 'Rogue\'s Bonnet',
-        Neck = 'Rabbit Charm',
+        Neck = 'Ashura Necklace',
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
         Body = 'Pln. Khazagand',
@@ -423,7 +423,7 @@ profile.OnLoad = function()
         -- Bonuses to RAcc, RAtk, AGI
         Head = 'Optical Hat',
         Neck = 'Ashura Necklace',
-        Ear1 = 'Wing Earring',
+        Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
         Hands = 'Rogue\'s Armlets',
