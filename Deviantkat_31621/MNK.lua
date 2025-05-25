@@ -175,7 +175,7 @@ profile.OnLoad = function()
 
     -- Ranged Ammo
     main.RegisterRangedAmmoGearset(main.Consts.AMMO_THROW, consts.AMMO, {
-        Ammo = nil,
+        Ammo = 'Bomb Core',
     });
 
     -- Weaponskills
