@@ -179,7 +179,7 @@ profile.OnLoad = function()
 
     -- Ranged Weapons
     main.RegisterRangedWeaponGearset(main.Consts.AMMO_ARROW, consts.BOW, {
-        Range = 'Selene\'s Bow',
+        Range = 'Ajjub Bow',
     });
     main.RegisterRangedWeaponGearset(main.Consts.AMMO_BOLT, consts.CROSSBOW, {
         Range = 'Staurobow',

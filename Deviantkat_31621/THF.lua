@@ -359,7 +359,7 @@ profile.OnLoad = function()
         -- Bonuses to Steal, DEX
         Head = 'Rogue\'s Bonnet',
         Neck = 'Rabbit Charm',
-        Hands = 'Rogue\'s Armlets',
+        Hands = 'Thief\'s Kote',
         Ring1 = 'Rogue\'s Ring',
         Legs = 'Rogue\'s Culottes',
         Feet = 'Rogue\'s Poulaines',
