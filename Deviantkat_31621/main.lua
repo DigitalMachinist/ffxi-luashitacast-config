@@ -134,6 +134,8 @@ main.SetKeybinds = function(keybinds)
         main.Settings.Keybinds[key] = value;
         AshitaCore:GetChatManager():QueueCommand(-1, '/bind ' .. key .. ' /lac fwd ' .. value);
     end
+    -- Bind a key to completely reboot luashitacast...
+    AshitaCore:GetChatManager():QueueCommand(-1, '/bind pause /addon reload luashitacast');
 end
 
 main.ResetKeybinds = function()
@@ -141,6 +143,7 @@ main.ResetKeybinds = function()
     for key, value in pairs(main.Settings.Keybinds) do
         AshitaCore:GetChatManager():QueueCommand(-1, '/unbind ' .. key);
     end
+    AshitaCore:GetChatManager():QueueCommand(-1, '/unbind pause');
 
     -- Clear keybinds
     main.Settings.Keybinds = {};
