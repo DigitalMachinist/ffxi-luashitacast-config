@@ -218,6 +218,20 @@ profile.OnLoad = function()
     main.RegisterWeaponskillGearset(consts.FINAL_HEAVEN, 'Final Heaven', {
         -- Description:	Additional effect: temporarily enhances Subtle Blow effect.
         -- Modifiers:	VIT:80%
+        Main = 'Spharai',
+        Head = 'Optical Hat',
+        Neck = 'Ashura Necklace',
+        Ear1 = 'Aesir Ear Pendant',
+        Ear2 = 'Suppanomimi',
+        --Body = 'Pln. Khazagand',
+        Body = 'Temple Cyclas',
+        Hands = 'Ochimusha Kote',
+        Ring1 = 'Ruby Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Aesir Mantle',
+        Waist = 'Brown Belt',
+        Legs = 'Melee Hose',
+        Feet = 'Sarutobi Kyahan',
     });
     main.RegisterWeaponskillGearset(consts.SHIJIN_SPIRAL, 'Shijin Spiral', {
         -- Description:	Delivers a fivefold attack that plagues the target. Chance of additional effect varies with TP.
