@@ -10,6 +10,7 @@ local consts = {
     TP = 'TP',
     CAST = 'Cast',
     TANK = 'Tank',
+    NINSUB = 'NIN Sub',
     UTILITY = 'Utility',
     SPECIAL = 'Special',
 
@@ -57,6 +58,7 @@ profile.OnLoad = function()
             F2 = consts.TP,
             F3 = consts.CAST,
             F4 = consts.TANK,
+            F5 = consts.NINSUB,
             F6 = consts.UTILITY,
             F7 = consts.SPECIAL,
             F10 = main.Consts.STATUS,
@@ -73,7 +75,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.FARM, {
         -- Optimize for combat vs. EP-
         -- Bonuses to Haste, Atk, STR
-        Main = 'Guespiere',
+        Main = 'Xiutleato',
         Sub = 'Darksteel Buckler',
         Head = 'Warlock\'s Chapeau',
         Neck = 'Aesir Torque',
@@ -91,7 +93,7 @@ profile.OnLoad = function()
     main.RegisterStanceGearset(consts.TP, {
         -- Optimize for combat vs. IT+
         -- Bonuses to Haste, Acc, Subtle Blow
-        Main = 'Guespiere',
+        Main = 'Xiutleato',
         Sub = 'Darksteel Buckler',
         Head = 'Warlock\'s Chapeau',
         Neck = 'Aesir Torque',
@@ -125,7 +127,7 @@ profile.OnLoad = function()
     });
     main.RegisterStanceGearset(consts.TANK, {
         -- Bonuses to Eva, HP, Def, Resistance
-        Main = 'Guespiere',
+        Main = 'Xiutleato',
         Sub = 'Ebony Wand',
         Head = 'Warlock\'s Chapeau',
         Neck = 'Aesir Torque',
@@ -139,6 +141,22 @@ profile.OnLoad = function()
         Waist = 'Tarutaru Sash',
         Legs = 'Warlock\'s Tights',
         Feet = 'Warlock\'s Boots',
+    });
+    main.RegisterStanceGearset(consts.NINSUB, {
+        Main = 'Batardeau',
+        Sub = 'Xiutleato',
+        Head = 'Warlock\'s Chapeau',
+        Neck = 'Aesir Torque',
+        Ear1 = 'Phantom Earring',
+        Ear2 = 'Suppanomimi',
+        Body = 'Warlock\'s Tabard',
+        Hands = 'Yigit Gages',
+        Ring1 = 'Zoredonite Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Behemoth Mantle',
+        Waist = 'Tarutaru Sash',
+        Legs = 'Duelist\'s Tights',
+        Feet = 'Yigit Crackows',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
