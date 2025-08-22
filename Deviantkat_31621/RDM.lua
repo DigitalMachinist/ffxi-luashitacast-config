@@ -10,7 +10,7 @@ local consts = {
     TP = 'TP',
     CAST = 'Cast',
     TANK = 'Tank',
-    NINSUB = 'NIN Sub',
+    NINSUB = 'NIN_Sub',
     UTILITY = 'Utility',
     SPECIAL = 'Special',
 
