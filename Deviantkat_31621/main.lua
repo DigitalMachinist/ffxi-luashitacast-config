@@ -136,6 +136,9 @@ main.SetKeybinds = function(keybinds)
     end
     -- Bind a key to completely reboot luashitacast...
     AshitaCore:GetChatManager():QueueCommand(-1, '/bind pause /addon reload luashitacast');
+    -- Bind some general CEXI helper commands
+    AshitaCore:GetChatManager():QueueCommand(-1, '/bind ^[ !signet');
+    AshitaCore:GetChatManager():QueueCommand(-1, '/bind ^] !mog');
 end
 
 main.ResetKeybinds = function()
@@ -144,6 +147,8 @@ main.ResetKeybinds = function()
         AshitaCore:GetChatManager():QueueCommand(-1, '/unbind ' .. key);
     end
     AshitaCore:GetChatManager():QueueCommand(-1, '/unbind pause');
+    AshitaCore:GetChatManager():QueueCommand(-1, '/unbind ^[');
+    AshitaCore:GetChatManager():QueueCommand(-1, '/unbind ^]');
 
     -- Clear keybinds
     main.Settings.Keybinds = {};
