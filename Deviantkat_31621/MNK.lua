@@ -95,7 +95,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Atk, STR
         Main = 'Spharai',
         Head = 'Optical Hat',
-        Neck = 'Ashura Necklace',
+        Neck = 'Ire Torque +1',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
@@ -112,7 +112,7 @@ profile.OnLoad = function()
         -- Bonuses to Haste, Acc, Subtle Blow
         Main = 'Spharai',
         Head = 'Optical Hat',
-        Neck = 'Ashura Necklace',
+        Neck = 'Ire Torque +1',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
@@ -128,7 +128,7 @@ profile.OnLoad = function()
         -- Bonuses to MP, Refresh, MND
         Main = 'Spharai',
         Head = 'Optical Hat',
-        Neck = 'Ashura Necklace',
+        Neck = 'Ire Torque +1',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
@@ -145,7 +145,7 @@ profile.OnLoad = function()
         -- Note: Def from equipment has no effect under Counterstance
         Main = 'Spharai',
         Head = 'Tiger Mask',
-        Neck = 'Ashura Necklace',
+        Neck = 'Ire Torque +1',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         Body = 'Scorpion Harness',
@@ -220,7 +220,7 @@ profile.OnLoad = function()
         -- Modifiers:	VIT:80%
         Main = 'Spharai',
         Head = 'Optical Hat',
-        Neck = 'Ashura Necklace',
+        Neck = 'Ire Torque +1',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
         --Body = 'Pln. Khazagand',
@@ -237,7 +237,7 @@ profile.OnLoad = function()
         -- Description:	Delivers a fivefold attack that plagues the target. Chance of additional effect varies with TP.
         -- Modifiers:	DEX:73-85%
         Head = 'Optical Hat',
-        Neck = 'Ashura Necklace',
+        Neck = 'Ire Torque +1',
         Ear1 = 'Giant\'s Earring',
         Ear2 = 'Suppanomimi',
         Body = 'Pln. Khazagand',
