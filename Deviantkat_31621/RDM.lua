@@ -193,13 +193,13 @@ profile.OnLoad = function()
     main.RegsiterRestingGearset(main.Consts.RESTING, {
         Main = 'Mst.Cst. Pole',
         -- Ammo = 'Mana Ampulla', -- Disabled because ammo gearswap covers it
-        --Head = 'Yigit Turban',
+        --Head = 'Yigit Turban', -- Get this item
         Neck = 'Opo-opo Necklace',
         Body = 'Yigit Gomlek',
         Hands = 'Yigit Gages',
         Waist = 'Qiqirn Sash',
         Legs = 'Libra Subligar',
-        --Legs = 'Yigit Tights',
+        --Legs = 'Yigit Tights', -- Get this item
         Feet = 'Yigit Crackows',
     });
 end
