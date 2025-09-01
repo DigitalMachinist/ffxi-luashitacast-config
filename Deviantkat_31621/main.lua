@@ -215,6 +215,7 @@ main.HandleDefault = function()
     
     if (main.IsResting()) then
         main.EquipRestingGearset();
+        return;
     end
 
     main.EquipStanceGearset();
