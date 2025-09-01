@@ -116,7 +116,7 @@ profile.OnLoad = function()
         Neck = 'Aesir Torque',
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
-        Body = 'Warlock\'s Tabard',
+        Body = 'Crimson Scale Mail',
         Hands = 'Yigit Gages',
         Ring1 = 'Zoredonite Ring',
         Ring2 = 'Demon\'s Ring',
@@ -176,7 +176,7 @@ profile.OnLoad = function()
 
     -- Ranged Ammo
     main.RegisterRangedAmmoGearset(main.Consts.AMMO_THROW, consts.AMMO, {
-        Ammo = nil,
+        Ammo = 'Mana Ampulla',
     });
 
     -- Weaponskills
