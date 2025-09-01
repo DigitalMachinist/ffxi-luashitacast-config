@@ -213,7 +213,10 @@ main.HandleDefault = function()
         return;
     end
     
-    local player = gData.GetPlayer();
+    if (main.IsResting()) then
+        main.EquipRestingGearset();
+    end
+
     main.EquipStanceGearset();
     main.EquipRangedWeaponGearset();
     main.EquipRangedAmmoGearset();
@@ -222,7 +225,6 @@ main.HandleDefault = function()
     main.EquipWeekdayGearset();
     main.EquipWeatherElementGearset();
     main.EquipMoonPhaseGearset();
-    main.EquipRestingGearset();
 end
 
 main.HandleAbility = function()
@@ -422,12 +424,16 @@ main.EquipWeatherElementGearset = function()
 end
 
 main.EquipRestingGearset = function()
-    local player = gData.GetPlayer();
-    if (player.Status ~= main.Consts.RESTING) then
-        return;
+    if (main.IsResting()) then
+        main.EquipGearset(main.Consts.RESTING);
     end
 
     main.EquipGearset(main.Consts.RESTING);
+end
+
+main.IsResting = function()
+    local player = gData.GetPlayer();
+    return ('__' .. player.Status) == main.Consts.RESTING;
 end
 
 main.GetGearsetLookupKey = function(baseGearsetKey, anotherKey)
