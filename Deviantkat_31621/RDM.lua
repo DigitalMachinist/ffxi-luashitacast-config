@@ -6,11 +6,11 @@ local main = require('main');
 
 local consts = {
     -- Stances
-    FARM = 'Farm',
-    TP = 'TP',
-    CAST = 'Cast',
+    HEAL = 'Heal',
+    NUKE = 'Nuke',
+    DPS = 'DPS',
     TANK = 'Tank',
-    NINSUB = 'NIN_Sub',
+    NIN = 'NIN',
     UTILITY = 'Utility',
     SPECIAL = 'Special',
 
@@ -50,15 +50,15 @@ local profile = {};
 profile.OnLoad = function()
     -- Initialize with defaults
     main.Initialize(
-        consts.FARM,
+        consts.HEAL,
         consts.RANGED,
         consts.AMMO,
         {
-            F1 = consts.FARM,
-            F2 = consts.TP,
-            F3 = consts.CAST,
+            F1 = consts.HEAL,
+            F2 = consts.NUKE,
+            F3 = consts.DPS,
             F4 = consts.TANK,
-            F5 = consts.NINSUB,
+            F5 = consts.NIN,
             F6 = consts.UTILITY,
             F7 = consts.SPECIAL,
             F10 = main.Consts.STATUS,
@@ -72,79 +72,43 @@ profile.OnLoad = function()
     );
 
     -- Stances
-    main.RegisterStanceGearset(consts.FARM, {
-        -- Optimize for combat vs. EP-
-        -- Bonuses to Haste, Atk, STR
-        Main = 'Xiutleato',
-        Sub = 'Darksteel Buckler',
-        Head = 'Warlock\'s Chapeau',
-        Neck = 'Aesir Torque',
-        Ear1 = 'Lycopodium Earring',
-        Ear2 = 'Phantom Earring',
-        Body = 'Warlock\'s Tabard',
-        Hands = 'Yigit Gages',
-        Ring1 = 'Zoredonite Ring',
-        Ring2 = 'Demon\'s Ring',
-        Back = 'Federal Army Mantle',
-        Waist = 'Tarutaru Sash',
-        Legs = 'Warlock\'s Tights',
-        Feet = 'Warlock\'s Boots',
-    });
-    main.RegisterStanceGearset(consts.TP, {
-        -- Optimize for combat vs. IT+
-        -- Bonuses to Haste, Acc, Subtle Blow
-        Main = 'Xiutleato',
-        Sub = 'Darksteel Buckler',
-        Head = 'Warlock\'s Chapeau',
-        Neck = 'Aesir Torque',
-        Ear1 = 'Lycopodium Earring',
-        Ear2 = 'Phantom Earring',
-        Body = 'Warlock\'s Tabard',
-        Hands = 'Yigit Gages',
-        Ring1 = 'Zoredonite Ring',
-        Ring2 = 'Demon\'s Ring',
-        Back = 'Federal Army Mantle',
-        Waist = 'Tarutaru Sash',
-        Legs = 'Warlock\'s Tights',
-        Feet = 'Warlock\'s Boots',
-    });
-    main.RegisterStanceGearset(consts.CAST, {
+    main.RegisterStanceGearset(consts.HEAL, {
         -- Bonuses to MP, Refresh, MND
-        Main = 'Ebony Wand',
+        Main = 'Tamaxchi',
         Sub = 'Darksteel Buckler',
-        Head = 'Warlock\'s Chapeau',
-        Neck = 'Aesir Torque',
+        Head = 'Yigit Turban',
+        Neck = 'Colossus\'s Torque',
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
         Body = 'Crm. Scale Mail',
         Hands = 'Yigit Gages',
         Ring1 = 'Zoredonite Ring',
-        Ring2 = 'Demon\'s Ring',
-        Back = 'Federal Army Mantle',
-        Waist = 'Tarutaru Sash',
-        Legs = 'Warlock\'s Tights',
-        Feet = 'Warlock\'s Boots',
-    });
-    main.RegisterStanceGearset(consts.TANK, {
-        -- Bonuses to Eva, HP, Def, Resistance
-        Main = 'Xiutleato',
-        Sub = 'Ebony Wand',
-        Head = 'Warlock\'s Chapeau',
-        Neck = 'Aesir Torque',
-        Ear1 = 'Lycopodium Earring',
-        Ear2 = 'Phantom Earring',
-        Body = 'Warlock\'s Tabard',
-        Hands = 'Warlock\'s Gloves',
-        Ring1 = 'Zoredonite Ring',
-        Ring2 = 'Demon\'s Ring',
+        Ring2 = 'Setae Ring',
         Back = 'Peiste Mantle',
         Waist = 'Tarutaru Sash',
         Legs = 'Warlock\'s Tights',
-        Feet = 'Warlock\'s Boots',
+        Feet = 'Duelist\'s Boots',
     });
-    main.RegisterStanceGearset(consts.NINSUB, {
-        Main = 'Batardeau',
-        Sub = 'Xiutleato',
+    main.RegisterStanceGearset(consts.NUKE, {
+        -- Bonuses to MP, Refresh, MND
+        Main = 'Tamaxchi',
+        Sub = 'Darksteel Buckler',
+        Head = 'Warlock\'s Chapeau',
+        Neck = 'Aesir Torque',
+        Ear1 = 'Elemental Earring',
+        Ear2 = 'Phantom Earring',
+        Body = 'Crm. Scale Mail',
+        Hands = 'Yigit Gages',
+        Ring1 = 'Zoredonite Ring',
+        Ring2 = 'Setae Ring',
+        Back = 'Federal Army Mantle',
+        Waist = 'Tarutaru Sash',
+        Legs = 'Duelist\'s Tights',
+        Feet = 'Yigit Crackows',
+    });
+    main.RegisterStanceGearset(consts.DPS, {
+        Main = 'Xiutleato',
+        Sub = 'Darksteel Buckler',
         Head = 'Warlock\'s Chapeau',
         Neck = 'Aesir Torque',
         Ear1 = 'Lycopodium Earring',
@@ -157,6 +121,28 @@ profile.OnLoad = function()
         Waist = 'Tarutaru Sash',
         Legs = 'Duelist\'s Tights',
         Feet = 'Yigit Crackows',
+    });
+    main.RegisterStanceGearset(consts.TANK, {
+        -- Bonuses to Eva, HP, Def, Resistance
+        Main = 'Xiutleato',
+        Sub = 'Darksteel Buckler',
+        Head = 'Warlock\'s Chapeau',
+        Neck = 'Cataract Choker',
+        Ear1 = 'Lycopodium Earring',
+        Ear2 = 'Phantom Earring',
+        Body = 'Warlock\'s Tabard',
+        Hands = 'Yigit Gages',
+        Ring1 = 'Zoredonite Ring',
+        Ring2 = 'Setae Ring',
+        Back = 'Peiste Mantle',
+        Waist = 'Tarutaru Sash',
+        Legs = 'Duelist\'s Tights',
+        Feet = 'Yigit Crackows',
+    });
+    main.RegisterStanceGearset(consts.NIN, {
+        Main = 'Batardeau',
+        Sub = 'Xiutleato',
+        Ear2 = 'Suppanomimi',
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
@@ -186,36 +172,8 @@ profile.OnLoad = function()
     -- main.RegisterAbilityGearset(consts.HIDE, consts.HIDE, { });
 
     -- Casting
-    main.RegisterPrecastGearset(main.Consts.PRECAST, {
-        -- Bonuses to Haste
-        Head = 'Warlock\'s Chapeau',
-        Neck = 'Aesir Torque',
-        Ear1 = 'Phantom Earring',
-        Ear2 = 'Phantom Earring',
-        Body = 'Warlock\'s Tabard',
-        Hands = 'Warlock\'s Gloves',
-        Ring1 = 'Zoredonite Ring',
-        Ring2 = 'Demon\'s Ring',
-        Back = 'Federal Army Mantle',
-        Waist = 'Tarutaru Sash',
-        Legs = 'Warlock\'s Tights',
-        Feet = 'Warlock\'s Boots',
-    });
-    main.RegisterMidcastGearset(main.Consts.MIDCAST, {
-        -- Bonuses to INT, MND
-        Head = 'Warlock\'s Chapeau',
-        Neck = 'Aesir Torque',
-        Ear1 = 'Phantom Earring',
-        Ear2 = 'Phantom Earring',
-        Body = 'Warlock\'s Tabard',
-        Hands = 'Yigit Gages',
-        Ring1 = 'Zoredonite Ring',
-        Ring2 = 'Demon\'s Ring',
-        Back = 'Federal Army Mantle',
-        Waist = 'Tarutaru Sash',
-        Legs = 'Warlock\'s Tights',
-        Feet = 'Warlock\'s Boots',
-    });
+    -- main.RegisterPrecastGearset(main.Consts.PRECAST, { });
+    -- main.RegisterMidcastGearset(main.Consts.MIDCAST, { });
 
     -- Ranged
     main.RegisterPreshotGearset(main.Consts.PRESHOT, {
@@ -234,20 +192,14 @@ profile.OnLoad = function()
     -- Resting
     main.RegsiterRestingGearset(main.Consts.RESTING, {
         Main = 'Mst.Cst. Pole',
-        -- Sub = ,
-        --Range = ,
-        --Ammo = ,
-        Head = 'Warlock\'s Chapeau',
-        Neck = 'Aesir Torque',
-        Ear1 = 'Phantom Earring',
-        Ear2 = 'Phantom Earring',
+        -- Ammo = 'Mana Ampulla', -- Disabled because ammo gearswap covers it
+        --Head = 'Yigit Turban',
+        Neck = 'Opo-opo Necklace',
         Body = 'Yigit Gomlek',
         Hands = 'Yigit Gages',
-        Ring1 = 'Demon\'s Ring',
-        Ring2 = 'Demon\'s Ring',
-        Back = 'Federal Army Mantle',
         Waist = 'Qiqirn Sash',
         Legs = 'Libra Subligar',
+        --Legs = 'Yigit Tights',
         Feet = 'Yigit Crackows',
     });
 end
