@@ -144,7 +144,7 @@ profile.OnLoad = function()
         -- -Def, +Eva, +HP, +Counter
         -- Note: Def from equipment has no effect under Counterstance
         Main = 'Spharai',
-        Head = 'Tiger Mask',
+        Head = 'Gnole Crown',
         Neck = 'Ire Torque +1',
         Ear1 = 'Aesir Ear Pendant',
         Ear2 = 'Suppanomimi',
