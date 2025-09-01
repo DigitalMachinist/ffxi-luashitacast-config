@@ -118,7 +118,7 @@ main.Initialize = function(stanceGearsetKey, rangedGearsetKey, ammoGearsetKey, k
     gSettings.AllowAddSet = true;
 
     main.ResetKeybinds();
-    main.SetKeybinds(keybinds);
+    -- main.SetKeybinds(keybinds); -- This double binds stuff... Probably an issue so commenting out for now.
     main.SetSettings(settings);
     main.SetSTANCE(stanceGearsetKey);
     main.SetRANGED(rangedGearsetKey);
