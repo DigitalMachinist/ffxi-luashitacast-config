@@ -117,7 +117,7 @@ main.Initialize = function(stanceGearsetKey, rangedGearsetKey, ammoGearsetKey, k
     gSettings.Debug = false;
     gSettings.AllowAddSet = true;
 
-    main.ResetKeybinds();
+    main.ResetKeybinds(keybinds);
     -- main.SetKeybinds(keybinds); -- This double binds stuff... Probably an issue so commenting out for now.
     main.SetSettings(settings);
     main.SetSTANCE(stanceGearsetKey);
@@ -141,7 +141,7 @@ main.SetKeybinds = function(keybinds)
     AshitaCore:GetChatManager():QueueCommand(-1, '/bind ^] !mog');
 end
 
-main.ResetKeybinds = function()
+main.ResetKeybinds = function(keybinds)
     -- Unbind keys
     for key, value in pairs(main.Settings.Keybinds) do
         AshitaCore:GetChatManager():QueueCommand(-1, '/unbind ' .. key);
@@ -154,7 +154,12 @@ main.ResetKeybinds = function()
     main.Settings.Keybinds = {};
 
     -- Set up default debug controls
-    main.SetKeybinds(main.Settings.DefaultKeybinds);
+    local keybindsWithDefaults = main.Settings.DefaultKeybinds;
+    for k,v in pairs(keybinds) do
+        keybindsWithDefaults[k] = v;
+    end
+
+    main.SetKeybinds(keybindsWithDefaults);
 end
 
 main.SetSettings = function(settings)
