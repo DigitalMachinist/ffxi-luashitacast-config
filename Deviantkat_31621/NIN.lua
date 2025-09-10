@@ -195,6 +195,7 @@ profile.OnLoad = function()
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
         Back = 'Federal Army Mantle',
+        Feet = 'Yasha Sune-Ate',
     });
 
     -- Ranged
