@@ -67,20 +67,20 @@ profile.OnLoad = function()
 
     -- Stances
     main.RegisterStanceGearset(consts.NUKE, {
-        Main = 'Mythic Wand',
+        Main = 'Tamaxchi',
         Sub = 'Kupo Shield',
         Head = 'Wizard\'s Petasos',
-        Neck = 'Jeweled Collar',
+        Neck = 'Aesir Torque',
         Ear1 = 'Elemental Earring',
-        Ear2 = 'Phantom Earring',
+        Ear2 = 'Hirudinea Earring',
         Body = 'Wizard\'s Coat',
-        Hands = 'Wizard\'s Gloves',
+        Hands = 'Wizard\'s Gloves', -- +15 Dark Magic: 'Sorcerer\'s Gloves',
         Ring1 = 'Zoredonite Ring',
         Ring2 = 'Eremite\'s Ring',
         Back = 'Fed. Army Mantle',
         Waist = 'Tarutaru Sash',
-        Legs = 'Wizard\'s Tonban',
-        Feet = 'Wizard\'s Sabots',
+        Legs = 'Sorceror\'s Tonban',
+        Feet = 'Yigit Crackows',
     });
     main.RegisterStanceGearset(consts.HEAL, {
         -- TODO
@@ -117,7 +117,7 @@ profile.OnLoad = function()
 
     -- Ranged Ammo
     main.RegisterRangedAmmoGearset(main.Consts.AMMO_THROW, consts.AMMO, {
-        Ammo = nil,
+        Ammo = 'Mana Ampulla',
     });
 
     -- Weaponskills
@@ -151,9 +151,13 @@ profile.OnLoad = function()
     -- Resting
     main.RegsiterRestingGearset(main.Consts.RESTING, {
         Main = 'Mst. Cst. Pole',
-        Body = 'Seer\'s Tunic',
+        --Ammo = 'Mana Ampulla'
+        Head = 'Yigit Turban',
+        Body = 'Yigit Gomlek',
+        Hands = 'Yigit Gages,'
         Waist = 'Qiqirn Sash',
-        Feet = 'Seer\'s Pumps,'
+        Legs = 'Yigit Seraweels'
+        Feet = 'Yigit Crackows,'
     });
 end
 
