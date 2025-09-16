@@ -79,7 +79,7 @@ profile.OnLoad = function()
         Ring2 = 'Eremite\'s Ring',
         Back = 'Fed. Army Mantle',
         Waist = 'Tarutaru Sash',
-        Legs = 'Sorceror\'s Tonban',
+        Legs = 'Sorceror\'s Tonban', -- +15 Dark Magic: 'Wizard\'s Tonban',
         Feet = 'Yigit Crackows',
     });
     main.RegisterStanceGearset(consts.HEAL, {
