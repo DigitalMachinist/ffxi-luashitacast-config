@@ -6,10 +6,8 @@ local main = require('main');
 
 local consts = {
     -- Stances
-    FARM = 'Farm',
-    TP = 'TP',
-    CAST = 'Cast',
-    TANK = 'Tank',
+    NUKE = 'Nuke',
+    HEAL = 'Heal',
     UTILITY = 'Utility',
     SPECIAL = 'Special',
 
@@ -53,10 +51,8 @@ profile.OnLoad = function()
         consts.RANGED,
         consts.AMMO,
         {
-            F1 = consts.FARM,
-            F2 = consts.TP,
-            F3 = consts.CAST,
-            F4 = consts.TANK,
+            F1 = consts.NUKE,
+            F2 = consts.HEAL,
             F5 = consts.UTILITY,
             F6 = consts.SPECIAL,
             F10 = main.Consts.STATUS,
@@ -70,19 +66,24 @@ profile.OnLoad = function()
     );
 
     -- Stances
-    main.RegisterStanceGearset(consts.FARM, {
-        -- Optimize for combat vs. EP-
-        -- Bonuses to Haste, Atk, STR
+    main.RegisterStanceGearset(consts.NUKE, {
+        Main = 'Ebony Wand',
+        Sub = 'Kupo Shield',
+        Head = 'Wizard\'s Petasos',
+        Neck = 'Torque',
+        Ear1 = 'Elemental Earring',
+        Ear2 = 'Phantom Earring',
+        Body = 'Wizard\'s Coat',
+        Hands = 'Wizard\'s Gloves',
+        Ring1 = 'Zoredonite Ring',
+        Ring2 = 'Eremite\'s Ring',
+        Back = 'Federal Army Mantle',
+        Waist = 'Qiqirn Sash',
+        Legs = 'Wizard\'s Tonban',
+        Feet = 'Wizard\'s Sabots',
     });
-    main.RegisterStanceGearset(consts.TP, {
-        -- Optimize for combat vs. IT+
-        -- Bonuses to Haste, Acc, Subtle Blow
-    });
-    main.RegisterStanceGearset(consts.CAST, {
-        -- Bonuses to MP, Refresh, MND
-    });
-    main.RegisterStanceGearset(consts.TANK, {
-        -- Bonuses to Eva, HP, Def, Resistance
+    main.RegisterStanceGearset(consts.HEAL, {
+        -- TODO
     });
     main.RegisterStanceGearset(consts.UTILITY, {
         Head = 'Sprout Beret',
@@ -112,20 +113,20 @@ profile.OnLoad = function()
     -- main.RegisterAbilityGearset(consts.HIDE, consts.HIDE, { });
 
     -- Casting
-    main.RegisterPrecastGearset(main.Consts.PRECAST, {
-        -- Bonuses to Haste
-    });
-    main.RegisterMidcastGearset(main.Consts.MIDCAST, {
-        -- Bonuses to INT, MND
-    });
+    -- main.RegisterPrecastGearset(main.Consts.PRECAST, {
+    --     -- Bonuses to Haste
+    -- });
+    -- main.RegisterMidcastGearset(main.Consts.MIDCAST, {
+    --     -- Bonuses to INT, MND
+    -- });
 
     -- Ranged
-    main.RegisterPreshotGearset(main.Consts.PRESHOT, {
-        -- Bonuses to Haste
-    });
-    main.RegisterMidcastGearset(main.Consts.MIDSHOT, {
-        -- Bonuses to RAcc, RAtk, AGI
-    });
+    -- main.RegisterPreshotGearset(main.Consts.PRESHOT, {
+    --     -- Bonuses to Haste
+    -- });
+    -- main.RegisterMidcastGearset(main.Consts.MIDSHOT, {
+    --     -- Bonuses to RAcc, RAtk, AGI
+    -- });
 
 
     -- Items
@@ -135,6 +136,10 @@ profile.OnLoad = function()
 
     -- Resting
     main.RegsiterRestingGearset(main.Consts.RESTING, {
+        -- Main = 'Mst. Cst. Pole',
+        Body = 'Seer\'s Tunic',
+        Waist = 'Qiqirn Sash',
+        Feet = 'Seer\'s Pumps,'
     });
 end
 
