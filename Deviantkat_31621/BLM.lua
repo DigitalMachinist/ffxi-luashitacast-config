@@ -156,8 +156,8 @@ profile.OnLoad = function()
         Body = 'Yigit Gomlek',
         Hands = 'Yigit Gages,'
         Waist = 'Qiqirn Sash',
-        Legs = 'Yigit Seraweels'
-        Feet = 'Yigit Crackows,'
+        Legs = 'Yigit Seraweels',
+        Feet = 'Yigit Crackows,',
     });
 end
 
