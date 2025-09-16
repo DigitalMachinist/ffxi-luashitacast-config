@@ -47,7 +47,7 @@ local profile = {};
 profile.OnLoad = function()
     -- Initialize with defaults
     main.Initialize(
-        consts.FARM,
+        consts.NUKE,
         consts.RANGED,
         consts.AMMO,
         {
