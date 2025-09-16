@@ -67,7 +67,7 @@ profile.OnLoad = function()
 
     -- Stances
     main.RegisterStanceGearset(consts.NUKE, {
-        Main = 'Ebony Wand',
+        Main = 'Mythic Wand',
         Sub = 'Kupo Shield',
         Head = 'Wizard\'s Petasos',
         Neck = 'Torque',
