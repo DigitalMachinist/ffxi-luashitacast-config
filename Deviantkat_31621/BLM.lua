@@ -93,7 +93,21 @@ profile.OnLoad = function()
         Back = 'Nexus Cape',
     });
     main.RegisterStanceGearset(consts.SPECIAL, {
-        -- Nothing just yet
+        -- BCNM40: Under Observation
+        Main = 'Chestnut Wand',
+        Sub = 'Kupo Shield',
+        Head = 'Seer\'s Crown',
+        Neck = 'Mohbwa Scarf',
+        Ear1 = 'Elemental Earring',
+        Ear2 = 'Cunning Earring',
+        Body = 'Seer\'s Tunic',
+        Hands = 'Seer\'s Mitts',
+        Ring1 = 'Zoredonite Ring',
+        Ring2 = 'Eremite\'s Ring',
+        Back = 'Federal Army Mantle',
+        Waist = 'Qiqirn Sash',
+        Legs = 'Seer\'s Slacks',
+        Feet = 'Seer\'s Pumps',
     });
 
     -- Ranged Weapons
