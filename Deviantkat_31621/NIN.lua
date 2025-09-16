@@ -185,7 +185,7 @@ profile.OnLoad = function()
         Neck = 'Cataract Choker',
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
-        Back = 'Federal Army Mantle',
+        Back = 'Fed. Army Mantle',
         Feet = 'Sarutobi Kyahan',
     });
     main.RegisterMidcastGearset(main.Consts.MIDCAST, {
@@ -194,7 +194,7 @@ profile.OnLoad = function()
         Neck = 'Cataract Choker',
         Ear1 = 'Phantom Earring',
         Ear2 = 'Phantom Earring',
-        Back = 'Federal Army Mantle',
+        Back = 'Fed. Army Mantle',
         Feet = 'Yasha Sune-Ate',
     });
 
@@ -213,7 +213,7 @@ profile.OnLoad = function()
         Hands = 'Ninja Tekko',
         Ring1 = 'Scorpion Ring',
         Ring2 = 'Archer\'s Ring',
-        Back = 'Federal Army Mantle',
+        Back = 'Fed. Army Mantle',
         Waist = 'Flagellant\'s Rope',
         Legs = 'Ninja Hakama',
         Feet = 'Ninja Kyahan',
