@@ -150,7 +150,7 @@ profile.OnLoad = function()
 
     -- Resting
     main.RegsiterRestingGearset(main.Consts.RESTING, {
-        Main = 'Mst. Cst. Pole',
+        Main = 'Mst.Cst. Pole',
         --Ammo = 'Mana Ampulla'
         Head = 'Yigit Turban',
         Body = 'Yigit Gomlek',
